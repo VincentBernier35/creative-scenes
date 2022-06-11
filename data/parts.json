@@ -1,0 +1,22 @@
+{
+  "personages": [
+    "un chaton",
+    "pinocchio",
+    "le président"
+  ],
+  "actions": [
+    "joue au golf",
+    "cours sur la plage",
+    "dort"
+  ],
+  "venues": [
+    "à la bibiothèque",
+    "sur une île tropicale",
+    "au pied de la tour eiffel"
+  ],
+  "with": [
+    "des martiens",
+    "un troupeau de moutons", 
+    "un joueur de la NBA"
+  ]
+}
