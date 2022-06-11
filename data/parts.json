@@ -4,13 +4,13 @@
     "pinocchio",
     "le président",
     "batman",
-    "hôtesse de l'air",
+    "une hôtesse de l'air",
     "superman",
     "Frida Kahlo"
   ],
   "actions": [
     "joue au golf",
-    "cours sur la plage",
+    "cours",
     "dort",
     "mange",
     "prie",
@@ -25,11 +25,11 @@
     "sur l'everest"
   ],
   "includs": [
-    "des martiens",
-    "un troupeau de moutons", 
-    "un joueur de la NBA",
-    "une guitare",
-    "un pick-up",
+    "avec des martiens",
+    "avec un troupeau de moutons", 
+    "avec un joueur de la NBA",
+    "avec une guitare",
+    "avec un pick-up",
     "avec un jet privé"
   ]
 }

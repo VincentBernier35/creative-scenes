@@ -8,7 +8,6 @@ app.use(express.static("public"));
 
 // router
 const router = require("./app/router");
-
 app.use(router);
 
 // server
