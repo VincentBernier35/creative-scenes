@@ -2,21 +2,34 @@
   "personages": [
     "un chaton",
     "pinocchio",
-    "le président"
+    "le président",
+    "batman",
+    "hôtesse de l'air",
+    "superman",
+    "Frida Kahlo"
   ],
   "actions": [
     "joue au golf",
     "cours sur la plage",
-    "dort"
+    "dort",
+    "mange",
+    "prie",
+    "chante"
   ],
   "venues": [
     "à la bibiothèque",
     "sur une île tropicale",
-    "au pied de la tour eiffel"
+    "au pied de la tour eiffel",
+    "en boîte de nuit",
+    "à Rio de Janeiro",
+    "sur l'everest"
   ],
   "includs": [
     "des martiens",
     "un troupeau de moutons", 
-    "un joueur de la NBA"
+    "un joueur de la NBA",
+    "une guitare",
+    "un pick-up",
+    "avec un jet privé"
   ]
 }
