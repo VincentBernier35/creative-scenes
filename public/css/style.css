@@ -19,5 +19,13 @@ p {
 }
 
 main {
+  position: relative;
+  background: aqua;
+  height: calc(100vh - 120px);
 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
