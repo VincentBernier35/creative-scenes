@@ -1,0 +1,23 @@
+
+body {
+  background-color: aqua;
+  height: 100%;
+}
+header {
+  text-align: center;
+  height: 120px;
+  padding: 20px;
+  background-color: #4158D0;
+  background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}
+
+main {
+
+}
