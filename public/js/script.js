@@ -32,14 +32,66 @@ const app = {
     // on ajoute les spans en spreadant le tableau
     app.container.append(...spans);
   },
+  // teste la présence de la route POST sur le serveur et affiche le formulaire si elle est présente
+  tryPost: async () => {
+    try {
+      const response = await fetch(`${app.baseUrl}/cadex`, { method: "POST" });
+      if (response.status !== 404) {
+        document.querySelector(".formOpen").style.display = "block";
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  },
+  showForm: () => {
+    document.querySelector(".formOpen").style.display = "none";
+    document.querySelector("form").style.display = "block";
+  },
+
+  hideForm: () => {
+    document.querySelector("form").style.display = "none";
+    document.querySelector(".formOpen").style.display = "block";
+  },
+
+  postCadex: async (event) => {
+    // on intercepte la validation du formulaire par le user
+    event.preventDefault();
+    const json = {};
+    // on place les infos des inputs dans un object
+    for (let i = 0; i < 4; i++) {
+      const input = event.target[i];
+      if (input.value) {
+        json[input.id] = input.value;
+      }
+    }
+    console.log(json);
+    try {
+      // on envoie l'object stringifié au serveur en indiquant le bon Content-Type
+      const response = await fetch(`${app.baseUrl}/cadex`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify(json),
+      });
+      const phrase = await response.json();
+      // on affiche la phrase reçue en réponse
+      app.displayPhrase(phrase);
+    } catch (error) {
+      console.error(error);
+    }
+  },
+
+
   // récupération d'un cadex aléatoire ou configuré via la queryString
   // cette string est stockée dans la variable location.search, on la retransmet telle quelle à la route
   fetchCadex: async () => {
     try {
       // http://localhost:4000/api/scene
-      const response = await fetch(`${app.baseUrl}/scene${location.search}`);
+      const response = await fetch(`http://localhost:4000/api/scene`);
       console.log("response =>", response);
       const phrase = await response.json();
+      console.log("phrase =>", phrase);
       app.displayPhrase(phrase);
     } catch (error) {
       console.error(error);

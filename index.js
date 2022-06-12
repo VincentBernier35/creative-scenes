@@ -3,7 +3,7 @@ require("dotenv").config;
 const express = require("express");
 const app = express();
 
-// static files
+// display static files
 app.use(express.static("public"));
 
 // router
